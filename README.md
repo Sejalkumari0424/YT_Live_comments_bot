@@ -16,27 +16,6 @@ flowchart LR
     E --> F[Streamlit Dashboard]
 ---
 
-## 🗂 Project Structure
-
-```
-├── backend/
-│   ├── config.py          # Redis config + YouTube video ID
-│   ├── main.py            # FastAPI server
-│   └── scraper.py         # Live chat scraper + ML pipeline
-├── frontend/
-│   └── streamlit_app.py   # Dashboard UI
-├── ml/
-│   ├── sentiment_model.py # MuRIL + XLM-R + Multilingual ensemble
-│   ├── topic_model.py     # Zero-shot BART topic classifier
-│   └── train_muril.py     # Fine-tuning script for MuRIL
-├── new_trained_data/
-│   └── muril-sentimix/    # Fine-tuned MuRIL model weights
-├── Redis-x64-5.0.14.1/    # Redis binaries (Windows)
-└── requirements.txt
-```
-
----
-
 ## ⚙️ Prerequisites
 
 - Python 3.10+
