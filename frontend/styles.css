@@ -1,0 +1,123 @@
+/* frontend/styles.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* LIGHT MODE */
+body.light {
+    background: #f5f7fb;
+    color: #333;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+/* Chat Feed (Scrollable) */
+.chat-feed {
+    margin-top: 20px;
+    height: 500px;              /* FIXED HEIGHT */
+    overflow-y: auto;           /* SCROLL ENABLED */
+    padding-right: 10px;
+}
+
+/* Chat Cards */
+.chat-card {
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+/* Light card */
+body.light .chat-card {
+    background: white;
+}
+
+/* Dark card */
+body.dark .chat-card {
+    background: #1e1e1e;
+}
+
+/* Hover effect */
+.chat-card:hover {
+    transform: translateY(-3px);
+}
+
+.author {
+    font-weight: bold;
+}
+
+.message {
+    margin: 5px 0 10px;
+}
+
+/* Sentiment badges */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    margin-right: 8px;
+}
+
+.positive { background: #4CAF50; }
+.neutral { background: #FFC107; color: black; }
+.negative { background: #F44336; }
+
+/* Confidence bar */
+.confidence-bar {
+    margin-top: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
